@@ -1,0 +1,23 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Apps4World
+@_exported import Apps4World
+import Swift
+import UIKit
+@objc @_inheritsConvenienceInitializers public class ScaryFacesManager : ObjectiveC.NSObject {
+  public static let isLicenseVerified: Swift.Bool
+  public static func configure(purchaseCode code: Swift.String)
+  public static func saveImage(_ image: UIKit.UIImage, assset assetImageView: UIKit.UIImageView?, controller: UIKit.UIViewController, selector: ObjectiveC.Selector)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_hasMissingDesignatedInitializers public class CustomImageView : UIKit.UIImageView, UIKit.UIGestureRecognizerDelegate {
+  public var previousLocation: CoreGraphics.CGPoint
+  public var didSelectImageView: (() -> Swift.Void)?
+  @objc override dynamic public init(image: UIKit.UIImage!)
+  @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @objc deinit
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
+}
